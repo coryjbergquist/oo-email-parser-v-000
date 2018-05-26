@@ -10,7 +10,7 @@ class EmailParser
 
   def initialize(argument)
     name = argument.split(",")
-    @@all << name
+    name
   end
 
 
