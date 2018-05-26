@@ -9,7 +9,7 @@ class EmailParser
   attr_accessor :email
 
   def initialize(argument)
-    name = argument.split(/[^a-zA-Z."]/)
+    name = argument.split(/[^a-zA-Z."@]/)
     @@all << name
 
   end
