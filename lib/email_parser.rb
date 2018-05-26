@@ -11,7 +11,7 @@ class EmailParser
   def initialize(argument)
     name = argument.split(",")
     name
-    binding.pry
+  
     name.each |x|
     if name.include?(x)
 
