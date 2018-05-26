@@ -11,12 +11,12 @@ class EmailParser
   def initialize(argument)
     name = argument.split(/[,\s]+/)
 
-    if @@all.detect do |x|
+      if @@all.detect do |x|
          x.name == name
 
        else
          @@all << name
-
+       end
   end
 
   def parse
