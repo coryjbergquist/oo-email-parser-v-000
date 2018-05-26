@@ -10,7 +10,7 @@ class EmailParser
   def initialize(email)
     emails = EmailParser.new
     if
-      @@all.include?(email)
+      @@all.include?
     else
       @@all << emails
     end
