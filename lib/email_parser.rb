@@ -18,6 +18,7 @@ class EmailParser
          @@all << name
        end
      end
+     end
   end
 
   def parse
