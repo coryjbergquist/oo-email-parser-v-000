@@ -15,7 +15,9 @@ class EmailParser
 
   def parse
 
-    @@all.flatten.uniq!
+    new = @@all.flatten.uniq
+    new
+
   end
 
 
