@@ -12,7 +12,13 @@ class EmailParser
     name = argument.split(",")
     name
     binding.pry
-emails
+    name.each |x|
+    if name.include?(x)
+
+    else
+      @@all << x
+    end
+    @@all
   end
 
 
