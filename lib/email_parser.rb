@@ -11,13 +11,14 @@ class EmailParser
   def initialize(argument)
     name = argument.split(",")
     name
-  
+
     name.each |x|
     if name.include?(x)
 
     else
       @@all << x
     end
+  end
     binding.pry
     @@all
   end
