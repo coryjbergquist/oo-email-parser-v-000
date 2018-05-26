@@ -7,10 +7,10 @@ class EmailParser
 
   attr_accessor :email
 
-  def create_new(email)
+  def initialize(email)
     emails = self.new
-    if 
-      @@all.include?(email) 
+    if
+      @@all.include?(email)
     else
       @@all << emails
     end
@@ -20,6 +20,6 @@ class EmailParser
   def parse
     @@all
   end
-  
+
 
 end
