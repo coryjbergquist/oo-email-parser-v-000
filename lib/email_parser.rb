@@ -9,7 +9,7 @@ class EmailParser
   attr_accessor :email
 
   def initialize(argument)
-    name = argument.scan(/\S[^,]/)
+    name = argument.scan(/[,\s]+/)
     @@all << name
 
   end
