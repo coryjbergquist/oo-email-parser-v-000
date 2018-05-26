@@ -18,6 +18,7 @@ class EmailParser
     else
       @@all << x
     end
+    binding.pry
     @@all
   end
 
