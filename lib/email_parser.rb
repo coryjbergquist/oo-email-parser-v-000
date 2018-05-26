@@ -10,13 +10,12 @@ class EmailParser
 
   def initialize(argument)
     name = argument.split(/[,\s]+/)
-      new_name = name.uniq
-      @@all << new_name
+      @@all << name
   end
 
   def parse
 
-    @@all.flatten
+    @@all.flatten.uniq!
   end
 
 
