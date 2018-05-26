@@ -7,10 +7,10 @@ class EmailParser
 
   attr_accessor :email
 
-  def initialize
+  def initialize(email)
     emails = EmailParser.new
     if
-      @@all.include?
+      @@all.include?(email)
     else
       @@all << emails
     end
