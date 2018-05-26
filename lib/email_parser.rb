@@ -10,7 +10,7 @@ class EmailParser
 
   def initialize(argument)
     name = argument.split(/[,\s]+/)
-      @@all << name.detect do |x| x == name
+      @@all << name.detect do |x| x != name
       end
       
   end
